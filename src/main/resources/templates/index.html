@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="header :: head (홈페이지)">
+    <meta charset="UTF-8">
+    <title>홈페이지</title>
+</head>
+<body>
+<hr>
+<h1><span th:text="${message}"/></h1>
+<br>
+<br>
+<h1>Have a nice day.</h1>
+<h2>Today is
+    <span th:text="${#temporals.format(now, 'yyyy-MM-dd HH:mm:ss')}"/>
+</h2>
+<h3>Version: 3.0</h3>
+</body>
+
+<footer th:replace="footer :: footer"></footer>
+</html>
